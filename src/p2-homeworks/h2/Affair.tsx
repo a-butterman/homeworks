@@ -13,10 +13,10 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div key={props.affair.id}>
-            <span>Name: {props.affair.name} - </span>
+            <span>{props.affair.name} - </span>
             <span>Priority: {props.affair.priority} </span>
 
-            <button onClick={() => deleteCallback(props.affair.id)}>X</button>
+            <button onClick={() => deleteCallback(props.affair.id)}>✘</button>
         </div>
     )
 }
