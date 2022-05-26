@@ -1,7 +1,29 @@
 .default {
-
+    width: 80px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #dddbcc;
+    margin: 5px;
+}
+.default:hover {
+    background-color: #c2c0b2;
+}
+.default:disabled {
+    background-color: #dddbcc;
+    cursor: default;
 }
 
 .red {
-    background: red;
+    width: 80px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #d56e6e;
+    margin: 5px;
+}
+.red:hover {
+    background-color: #af5454;
 }

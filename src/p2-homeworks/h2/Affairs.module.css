@@ -1,3 +1,41 @@
-.someClass {
+.body {
+    width: 400px;
+    height: auto;
+    margin: 10px 0 0 20px;
 
+    background-color: #dddbcc;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-areas:
+    'affairs'
+    'buttons';
+
+}
+.gridAffairs {
+    grid-area: affairs;
+}
+.gridButtons {
+    grid-area: buttons;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonFilter {
+    width: 80px;
+    height: 30px;
+
+    cursor: pointer;
+
+    border: 0px solid #ffffff;
+    border-radius: 10px;
+
+    background-color: #bbb9af;
+    color: #236b80;
+}
+.buttonFilter:hover {
+    background-color: #a4a29a;
+    color: #134c5d;
 }

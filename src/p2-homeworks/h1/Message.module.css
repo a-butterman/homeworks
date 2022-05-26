@@ -1,62 +1,75 @@
 .body {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-
     width: 500px;
-    height: 150px;
-    background: darkgray;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    margin-left: 20px;
+}
+.body__avatar {
+    display: flex;
+    align-items: flex-end;
 }
 
 .avatar {
-    position: relative;
-    top: 80px;
-    left: 60px;
-
+    width: 80px;
+    height: 80px;
+    border: #dddbcc 1px solid;
     border-radius: 50%;
-    width: 50px;
 }
-
 .cloud {
     position: relative;
-    top: 40%;
-
-    box-sizing: border-box;
-    padding: 15px;
-
-    border-radius: 10px 10px 10px 0;
-    background: #002200;
     width: 300px;
-    height: 75px;
-}
+    min-height: 100px;
 
+
+    display: grid;
+    grid-template-areas:
+        'name'
+        'text'
+        'time';
+
+    border-radius: 20px 20px 20px 0;
+
+    background-color: #dddbcc;
+}
 .cloud:before {
     content: '';
     position: absolute;
     bottom: 0px;
-    left: -20px;
+    left: -40px;
 
-    width: 20px;
-    height: 10px;
+    width: 40px;
+    height: 20px;
 
 
-    border-radius: 0 0 10px 0;
-    box-shadow: 10px 0 0 0 #002200;
+    border-radius: 0 0 20px 0;
+    box-shadow: 20px 0 0 0 #dddbcc;
 }
 
-.name {
-    margin-bottom: 10px;
+.cloud__name {
+    grid-area: name;
+
+    margin: 10px 10px 0 10px;
+
     font-weight: bold;
-    color: #918dbe;
+    font-size: 20px;
+    color:  #236b80;
 }
+.cloud__text {
+    grid-area: text;
 
-.message {
-    color: #bbd4be;
+    margin: 10px;
+
+    font-size: 14px;
+    color: #133944;
 }
+.cloud__time {
+    grid-area: time;
+    display: flex;
+    justify-content: flex-end;
 
-.time {
-    position: absolute;
-    top: 70%;
-    left: 80%;
-    font-weight: bold;
-    color: #335534;
+    margin: 0 10px 10px 10px;
+
+    font-size: 14px;
+    color: #85837a;
 }

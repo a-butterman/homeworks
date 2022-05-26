@@ -1,0 +1,33 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px;
+    margin-bottom: 5px;
+    color: #236b80;
+}
+
+.priorityHigh {
+    color: #d50000;
+}
+.priorityMiddle {
+    color: #dc8d00;
+}
+.priorityLow {
+    color: #006200;
+}
+
+.buttonDel {
+    width: 50px;
+    height: 20px;
+
+    cursor: pointer;
+    color: #cc4444;
+
+    border: 0px solid #ffffff;
+    border-radius: 5px;
+
+    background-color: #bbb9af;
+}
+.buttonDel:hover {
+    background-color: #b47474;
+    color: #ff0000;
+}
