@@ -8,7 +8,7 @@
     padding-left: 10px;
 }
 .input:focus {
-    border: 0px solid #236b80;
+    outline: 0px;
     background-color: #f1f1f1;
 }
 
