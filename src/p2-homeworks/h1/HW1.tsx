@@ -3,7 +3,7 @@ import Message from "./Message";
 
 const messageData = {
     avatar: "https://sun9-61.userapi.com/s/v1/ig2/xR9VylbzC58hQSfmyA5HsXwLU4LpbhXSRycOOgNyEGABg0vk7ivj2rPCyRa8A65O9pa9N0m4VdcxK7i-klzUgq3G.jpg?size=1080x1080&quality=96&type=album",
-    name: 'Butterman',
+    name: 'Arthur Butterman',
     message: 'Первая "Задача от Игната"! Полет нормальный!',
     time: '19:40'
 }
