@@ -17,7 +17,8 @@
     height: 30px;
     margin: 20px 0 0 20px;
     border-radius: 15px 0 0 15px;
-    border: 0px solid black;
+    outline: none;
+    border: 0px;
     background-color: #dcc1c1;
     padding-left: 10px;
 }
@@ -35,11 +36,29 @@
     cursor: pointer;
 
     border-radius: 0 15px 15px 0;
-    border: 0px solid black;
+    border: none;
     background-color: #236b80;
     color: #dddbcc;
     font-weight: bold;
 }
 .buttonAdd:hover {
     background-color: #1b5364;
+}
+
+.buttonAdd:disabled {
+    cursor: default;
+    background-color: #465b60;
+}
+
+.spanUsers {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    width: 32px;
+    height: 32px;
+    color: #dddbcc;
+    font-weight: bold;
+    background-color: #236b80;
 }

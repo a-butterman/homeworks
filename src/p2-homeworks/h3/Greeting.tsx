@@ -15,6 +15,7 @@ const Greeting: React.FC<GreetingPropsType> = ( {name, setNameCallback, addUser,
 
     const inputClass = error ? s.error : s.input// need to fix with (?:)
     const errorClass = error ? s.errorText : ''
+    const errorBtn = name === '' ? true : false
 
     return (
         <div>
@@ -23,8 +24,8 @@ const Greeting: React.FC<GreetingPropsType> = ( {name, setNameCallback, addUser,
                        onKeyDown={onKeyDownEnter}
                        className={inputClass}
                 />
-            <button className={s.buttonAdd} onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+            <button className={s.buttonAdd} onClick={addUser} disabled={errorBtn}>add</button>
+            <span className={s.spanUsers} >{totalUsers}</span>
             <div className={errorClass}>{error}</div>
         </div>
     )
