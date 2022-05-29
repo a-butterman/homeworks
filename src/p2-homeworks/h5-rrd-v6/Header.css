@@ -1,0 +1,69 @@
+.hidden__checkbox {
+    display: none;
+}
+.hidden__checkbox:checked ~ .hidden__button {
+    left: 385px;
+}
+.hidden__checkbox:checked ~ .menu {
+    left: 0;
+}
+
+.menu {
+    height: 40px;
+    position: absolute;
+    left: -385px;
+    transition: all 0.5s ease-in-out;
+}
+.menu a {
+    z-index: 999;
+    display: inline-block;
+    min-width: 100px;
+    padding: 12px;
+    background-color: #dddbcc;
+    cursor: pointer;
+
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #236b80;
+
+    border-right: 2px solid #9f9999;
+    transition: all 0.5s ease-in-out;
+}
+.menu a:hover {
+    color: #1e89a8;
+    background-color: #c4c2b5;
+    transition: all 0.5s ease-in-out;
+}
+.menu a.active {
+    color: #22a3c7;
+    background-color: #b7b5a9;
+    transition: all 0.5s ease-in-out;
+}
+
+.hidden__button {
+    z-index: 999;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    min-height: 42px;
+    min-width: 42px;
+    cursor: pointer;
+    background-color: #dddbcc;
+
+    text-align: center;
+    font-size: 28px;
+    color: #236b80;
+
+    border-radius: 0 30% 30% 0;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.hidden__button:hover {
+    background-color: #c4c2b5;
+    color: #1e89a8;
+    transition: all 0.5s ease-in-out;
+}
+

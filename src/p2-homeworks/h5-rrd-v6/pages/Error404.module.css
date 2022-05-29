@@ -1,0 +1,12 @@
+.er404 {
+    position: fixed;
+    top: 60px;
+    width: 55%;
+}
+
+.er404 img {
+    display: block;
+    width: 100%;
+
+    height: 100%;
+}
